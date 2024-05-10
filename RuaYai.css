@@ -1,0 +1,87 @@
+    /** MENU BAR **/
+    .nav {
+        background: rgb(0, 0, 0); /* Set background color */
+        width: 100%; /* Set width to 100% */
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Align items with space between */
+        padding: 5px; /* Add padding */
+        border-radius: 22px; /* Set border radius */
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    }
+
+    /** background before Click **/
+    .nav a {
+        text-decoration: none; /* Remove underline from links */
+        color: rgb(255, 255, 255); /* Set text color */
+        text-decoration: none; /* Remove underline from links */
+        border-radius: 22px; /* Set border radius */
+        padding: 10px 300px; /* Added padding for better clickable area */
+    }
+
+    /** background After Click **/
+    .nav > a:hover {
+        transition: 0.25s; /* Add transition effect */
+        background: rgb(240, 15, 15); /* Change background color on hover */
+        color: white; /* Change text color on hover */
+    }
+   
+ /* Style for grid layout */
+ .location {
+  
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Style for each location card */
+.location div {
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.location div:hover {
+  transform: translateY(-5px);
+}
+
+.location h1 {
+ 
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.location img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.location img:hover {
+  transform: scale(1.1);
+}
+
+.location table { 
+
+  width: 100%;
+  margin-top: 20px;
+  color: #666;
+}
+
+.location th {
+  
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.location td {
+  padding-bottom: 10px;
+  text-decoration: none; /* Remove underline */
+}

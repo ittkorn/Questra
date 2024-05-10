@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- Document type declaration specifying HTML5 -->
+<html lang="en"> <!-- Root element with lang attribute for language -->
+
+<head> <!-- Head section containing metadata and styles -->
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsiveness -->
+    <title>Home</title> <!-- Title of the webpage -->
+    <style> 
+
+        /* MENU BAR*/
+        .nav {
+            background: rgb(0, 0, 0); /* Background color */
+            width: 100%; /* Full width */
+            display: flex; /* Flex display */
+            justify-content: space-between; /* Space between items */
+            padding: 5px; /* Padding */
+            border-radius: 22px; /* Border radius */
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+        }
+
+        /*background before Click*/
+        .nav a {
+            color: rgb(255, 255, 255); /* Text color */
+            text-decoration: none; /* No underline */
+            border-radius: 22px; /* Border radius */
+            padding: 10px 300px; /* Added padding for better clickable area */ /* Padding */
+        }
+
+        /*background After Click*/
+        .nav > a:hover {
+            transition: 0.25s; /* Transition duration */
+            background: rgb(240, 15, 15); /* Background color change */
+            color: white; /* Text color change */
+        }
+/*PICTURE I*/
+        .body {
+            width: 1400px; /* Width */
+            height: 200px; /* Height */
+            background-color: #ea0b0b; /* Background color */
+            border: 2px solid #333; /* Border */
+            padding: 20px; /* Padding */
+            margin: 20px; /* Margin */
+        }
+        /*PICTURE II*/
+        .body2 {
+            width: 1400px; /* Width */
+            height: 200px; /* Height */
+            background-color: #ea0b0b; /* Background color */
+            border: 2px solid #333; /* Border */
+            padding: 20px; /* Padding */
+            margin: 20px; /* Margin */
+        }
+
+        .card-container {
+            display: flex; /* Flex display */
+            justify-content: space-around; /* Distribute items evenly along the main axis */ /* Space around items */
+            align-items: center; /* Center items vertically */
+            gap: 20px; /* Gap between items */
+            margin-top: 20px; /* Margin at the top */
+        }
+
+        .card {
+            box-sizing: border-box; /* Box-sizing */
+            width: 190px; /* Width */
+            height: 254px; /* Height */
+            background: rgba(217, 217, 217, 0.58); /* Background color */
+            border: 1px solid black; /* Border */
+            box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22); /* Box shadow */
+            backdrop-filter: blur(6px); /* Filter */
+            border-radius: 17px; /* Border radius */
+            text-align: center; /* Text alignment */
+            cursor: pointer; /* Cursor style */
+            transition: all 0.5s; /* Transition duration */
+            user-select: none; /* Disable text selection */
+            font-weight: bolder; /* Font weight */
+            color: black; /* Text color */
+            margin: 10px; /* Added margin for spacing */ /* Margin */
+        }
+
+        .card:hover {
+            border: 1px solid red; /* Border color change */
+            transform: scale(1.05); /* Scale transformation */
+        }
+
+        .card:active {
+            transform: scale(0.95) rotateZ(1.7deg); /* Scale and rotate transformation */
+        }
+    </style>
+</head>
+
+<body> <!-- Body section containing the content of the webpage -->
+    <h1 align="center">QUESTRA</h1> <!-- Heading aligned to the center -->
+    <hr> <!-- Horizontal line -->
+
+    <div class="nav"> <!-- Navigation bar -->
+        <a href="#">Home</a> <!-- Home link -->
+        <a href="2.html">RuaYai</a> <!-- RuaYai link -->
+    </div>
+ <div class="body"> <!-- Picture section -->
+        <h1 align="center">PICTURE</h1> <!-- Heading aligned to the center -->
+    </div>
+
+    <div class="card-container"> <!-- Container for cards -->
+        <div class="card"> <!-- First card -->
+          
+            <h1>The sense</h1> <!-- Card content -->
+        </div>
+
+        <div class="card"> <!-- Second card -->
+            <h1>lamoon</h1> <!-- Card content -->
+        </div>
+
+        <div class="card"> <!-- Third card -->
+            <h1>suparai <!-- Card content -->
+   
+        </div>
+    </div>
+
+    <div class="body"> <!-- Another picture section -->
+        <h1 align="center">PICTURE</h1> <!-- Heading aligned to the center -->
+    </div>
+
+    <div align="center"> <!-- Centered text -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur, nostrum repellat molestias possimus ipsum laboriosam natus quae nesciunt voluptatem?
+    </div>
+</body>
+
+</html>

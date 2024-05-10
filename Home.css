@@ -1,0 +1,84 @@
+/* MENU BAR */
+.nav {
+    text-decoration: none; /* No underline */
+    background: rgb(0, 0, 0); /* Background color */
+    width: 100%; /* Full width */
+    display: flex; /* Flex display */
+    justify-content: space-between; /* Space between items */
+    padding: 5px; /* Padding */
+    border-radius: 22px; /* Border radius */
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+/* Background before Click */
+.nav a {
+    color: rgb(255, 255, 255); /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 22px; /* Border radius */
+    padding: 10px 300px; /* Added padding for better clickable area */
+    transition: background 0.25s, color 0.25s; /* Transition effect for background and color */
+}
+
+/* Background After Click */
+.nav a:hover {
+    background: rgb(240, 15, 15); /* Background color change */
+    color: white; /* Text color change */
+    text-decoration: none; /* No underline */
+}
+
+.content {
+    margin: 20px; /* ระยะห่างรอบๆ */
+}
+
+.image-container figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: black; /* กำหนดสีข้อความเป็นสีดำ */
+    position: absolute;
+    bottom: -30px; /* ตำแหน่งของชื่อติดกับขอบล่างของ container */
+    left: 50%; /* จัดชื่อให้อยู่ตรงกลางภายใน container */
+    transform: translateX(-50%); /* ย้ายชื่อไปทางซ้าย 50% ของความกว้างของ container */
+}
+
+.image-container figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    margin: 0 10px; /* เว้นระยะห่างระหว่างรูปภาพ */
+    border-radius: 10px; /* มุมโค้งของรูปภาพ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาใต้รูปภาพ */
+    transition: transform 0.25s ease-in-out; /* Transition effect for image */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+}
+
+.image-container figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    color: black; /* กำหนดสีข้อความเป็นสีดำ */
+    text-decoration: underline; /* เพิ่มเส้นใต้ให้กับคำว่า Suparai */
+}
+
+/* Style for the main content */
+.main-content {
+    text-align: center;
+    margin: 20px;
+}
+
+.main-content img {
+    max-width: 100%; /* กำหนดขนาดสูงสุดของรูปภาพ */
+    border-radius: 10px; /* มุมโค้งของรูปภาพ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาใต้รูปภาพ */
+}
+
+.main-content p {
+    margin-bottom: 20px; /* ระยะห่างระหว่างย่อหน้า */
+    text-align: justify; /* จัดข้อความให้อยู่ชิดซ้ายและชิดขวา */
+}
