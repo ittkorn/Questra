@@ -26,6 +26,11 @@ echo '<link rel="stylesheet" type="text/css" href="RuaYai.css">';
     </style>
 </head>
 <body>
+<div style="text-align: center;">
+    <a href="insertform.html" style="background-color: red; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Add Location</a>
+</div>
+<br>
+    
     <nav class="nav">
         <!-- Your navigation links here -->
     </nav>
@@ -57,7 +62,7 @@ echo '<link rel="stylesheet" type="text/css" href="RuaYai.css">';
                     echo '<div >';
                     echo '<figcaption><h1>' . $row["name"] . '</h1></figcaption>';
                     echo '<a href="' . $row["facebook"] . '" target="_blank">';
-                    echo '<img src="Image/' . $row["img"] . '" width="200" height="300">';
+                    echo '<img src="Image/' . $row["picture"] . '" width="200" height="300">';
                     echo '</a>';
                     echo '<table>';
                     echo '<tr><th></th><td>'.$row['address'].'</td></tr>';

@@ -30,28 +30,27 @@
     margin: 20px; /* ระยะห่างรอบๆ */
 }
 
-.image-container figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-    color: black; /* กำหนดสีข้อความเป็นสีดำ */
-    position: absolute;
-    bottom: -30px; /* ตำแหน่งของชื่อติดกับขอบล่างของ container */
-    left: 50%; /* จัดชื่อให้อยู่ตรงกลางภายใน container */
-    transform: translateX(-50%); /* ย้ายชื่อไปทางซ้าย 50% ของความกว้างของ container */
-}
+/* Image Container Styles */
+.image-container {
+    display: flex; /* Use flexbox for the container */
+    justify-content: space-between; /* Space images evenly */
+    align-items: center; /* Center images vertically */
+    flex-wrap: nowrap; /* Ensure images don't wrap to the next line */
+  
 
 .image-container figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 .image-container img {
-    margin: 0 10px; /* เว้นระยะห่างระหว่างรูปภาพ */
-    border-radius: 10px; /* มุมโค้งของรูปภาพ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาใต้รูปภาพ */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Image shadow */
     transition: transform 0.25s ease-in-out; /* Transition effect for image */
+    display: inline-block; /* Display as inline-block */
+    max-width: 100%; /* Ensure images do not overflow */
 }
 
 .image-container img:hover {
@@ -62,23 +61,7 @@
     text-align: center;
     margin-top: 10px;
     font-style: italic;
-    color: black; /* กำหนดสีข้อความเป็นสีดำ */
-    text-decoration: underline; /* เพิ่มเส้นใต้ให้กับคำว่า Suparai */
+    color: black; /* Caption text color */
+    text-decoration: underline; /* Underline caption text */
 }
 
-/* Style for the main content */
-.main-content {
-    text-align: center;
-    margin: 20px;
-}
-
-.main-content img {
-    max-width: 100%; /* กำหนดขนาดสูงสุดของรูปภาพ */
-    border-radius: 10px; /* มุมโค้งของรูปภาพ */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาใต้รูปภาพ */
-}
-
-.main-content p {
-    margin-bottom: 20px; /* ระยะห่างระหว่างย่อหน้า */
-    text-align: justify; /* จัดข้อความให้อยู่ชิดซ้ายและชิดขวา */
-}

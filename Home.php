@@ -28,7 +28,8 @@ echo '<link rel="stylesheet" type="text/css" href="Home.css">';
 
     <!-- รูปภาพในหน้า Home -->
     <img src="Image/Home.png"  width="1460px" height="1050">
-    <br><br>
+    <br>
+    <br>
 
     <!-- ส่วนของรูปภาพและข้อมูลจากฐานข้อมูล -->
     <div class="image-container"> <!-- Container for cards -->
@@ -77,6 +78,7 @@ echo '<link rel="stylesheet" type="text/css" href="Home.css">';
         $conn->close();
         ?>
     </div>
+    <br>
    
 
     <!-- Main data section -->
